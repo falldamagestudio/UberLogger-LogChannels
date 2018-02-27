@@ -10,11 +10,11 @@ Set channel log filter levels individually: disable Message for some channel, le
 
 # Usage
 
-# Create channel definitions
+## Create channel definitions
 
 Create a new asset of type LogChannels. Add a few enabled configurations, and a few channels which you would like to have exist. ![Example configuration](/AssetInspectorExample.png?raw=true)
 
-# Use the channels
+## Use the channels
 
 Instead of this:
 
@@ -36,6 +36,6 @@ LogChannels.UnitMovementDebug.LogWarning(string.Format("Unit {0} stuck behind ob
 LogChannels.NetworkableSerialization.LogError(string.Format("Cannot serialize reference to {0}", asset.name));
 ```
 
-# Mute/unmute channels
+## Mute/unmute channels
 
 Adjust the Min Severity setting for the channel in the configuration asset, and regenerate the code.
