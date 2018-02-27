@@ -1,8 +1,12 @@
 # UberLogger-LogChannels
 
+# Features
+
 Get compile time validation of channel names: channel names are available via IntelliSense.
 
-Eliminate calls to muted channels at compile time. Logging to channels will have zero runtime cost.
+Eliminate calls to muted channels at compile time. Logging to muted channels will have zero runtime cost. Any logic used to create the log string will also be eliminated.
+
+Set channel log filter levels individually: disable Message for some channel, leave it on for others. This allows you to place detailed logging in your different systems, ready to be activated for individual systems when it is time to investigate something in them.
 
 # Usage
 
@@ -32,3 +36,6 @@ LogChannels.UnitMovementDebug.LogWarning(string.Format("Unit {0} stuck behind ob
 LogChannels.NetworkableSerialization.LogError(string.Format("Cannot serialize reference to {0}", asset.name));
 ```
 
+# Mute/unmute channels
+
+Adjust the Min Severity setting for the channel in the configuration asset, and regenerate the code.
