@@ -12,7 +12,9 @@ Set channel log filter levels individually: disable Message for some channel, le
 
 ## Create channel definitions
 
-Create a new asset of type LogChannels. Add a few enabled configurations, and a few channels which you would like to have exist. ![Example configuration](/AssetInspectorExample.png?raw=true)
+Create a new asset of type LogChannels. Add a few enabled configurations, and a few channels which you would like to have exist.
+
+![Example configuration](/AssetInspectorExample.png?raw=true)
 
 ## Use the channels
 
